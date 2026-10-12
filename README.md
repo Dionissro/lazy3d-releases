@@ -14,10 +14,24 @@ Jednoduchý 3D modelár pre 3D tlač a laser – po slovensky, bez predplatného
 Mac s Apple čipom (M1 a novšie) aj s Intelom, macOS 13 Ventura a novší.
 Zoznam verzií a zmien: [Releases](https://github.com/Dionissro/lazy3d-releases/releases)
 
-## Inštalácia
+## Inštalácia – najjednoduchšie (bez upozornenia)
 
-1. Otvor stiahnutý `Lazy3D.dmg` a potiahni Lazy3D do priečinka **Aplikácie**.
+Otvor **Terminál** (⌘ medzerník → napíš Terminál), vlož tento riadok a stlač Enter:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/Dionissro/lazy3d-releases/main/install.sh | bash
+```
+
+Stiahne najnovšiu verziu, dá ju do priečinka Aplikácie a otvorí ju. macOS sa na nič nepýta,
+lebo súbor nesťahuje prehliadač. Tým istým príkazom sa dá Lazy3D kedykoľvek preinštalovať.
+Čo príkaz robí, si môžeš pozrieť v súbore [install.sh](install.sh).
+
+## Inštalácia cez stiahnutý súbor
+
+1. Stiahni [Lazy3D.dmg](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D.dmg),
+   otvor ho a potiahni Lazy3D do priečinka **Aplikácie**.
 2. Pri prvom otvorení ho macOS zastaví, lebo aplikácia nie je z App Store.
    Klikni **Hotovo**, otvor **Nastavenia systému → Súkromie a bezpečnosť**, zroluj dole
    a pri Lazy3D klikni **Aj tak otvoriť**. (macOS 13–14: pravý klik na Lazy3D → Otvoriť.)
-3. Nové verzie si Lazy3D nájde samo a ponúkne aktualizáciu.
+
+Nové verzie si Lazy3D nájde samo a ponúkne aktualizáciu.
