@@ -35,3 +35,26 @@ lebo súbor nesťahuje prehliadač. Tým istým príkazom sa dá Lazy3D kedykoľ
    a pri Lazy3D klikni **Aj tak otvoriť**. (macOS 13–14: pravý klik na Lazy3D → Otvoriť.)
 
 Nové verzie si Lazy3D nájde samo a ponúkne aktualizáciu.
+
+## Licencie a zdrojový kód
+
+Lazy3D © 2026 Tobias Lorencovič. Aplikácia obsahuje súčasti tretích strán – zoznam a plné znenie licencií
+je priamo v aplikácii v menu **Pomoc → Licencie a zdrojový kód** (alebo Nastavenia → O aplikácii):
+
+| Súčasť | Licencia |
+|---|---|
+| Open CASCADE Technology (CAD jadro, cez replicad-opencascadejs) | LGPL 2.1 |
+| replicad, three.js, opentype.js, fflate, Electron | MIT |
+| Clipper (clipper-lib) | Boost Software License 1.0 |
+| Písma Roboto, Big Shoulders Stencil Text | SIL Open Font License 1.1 |
+| Chromium a Node.js (súčasť Electronu) | zoznam licencií je v aplikácii |
+
+**Zdrojový kód CAD jadra (LGPL 2.1).** Open CASCADE Technology je v Lazy3D samostatný súbor
+(`replicad_single.wasm`) a dá sa nahradiť vlastnou upravenou verziou. Zdrojový kód:
+
+- zostavenie replicad-opencascadejs 1.1.0: https://github.com/sgenoud/replicad/tree/v1.1.0/packages/replicad-opencascadejs
+- nástroj opencascade.js (verzia ebd263f1): https://github.com/taucad/opencascade.js
+- Open CASCADE Technology: https://github.com/Open-Cascade-SAS/OCCT
+
+Na požiadanie na info@dionis.sk poskytneme kompletný zdrojový kód tejto knižnice v presne použitej verzii,
+najmenej 3 roky od vydania danej verzie Lazy3D.
