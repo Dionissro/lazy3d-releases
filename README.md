@@ -73,6 +73,7 @@ je priamo v aplikácii v menu **Pomoc → Licencie a zdrojový kód** (alebo Nas
 | Open CASCADE Technology (CAD jadro, cez replicad-opencascadejs) | LGPL 2.1 |
 | replicad, three.js, opentype.js, fflate, Electron | MIT |
 | Clipper (clipper-lib) | Boost Software License 1.0 |
+| QR Code Generator (qrcode-generator, Kazuhiko Arase) – „QR Code“ je ochranná známka DENSO WAVE | MIT |
 | Písma Roboto, Big Shoulders Stencil Text | SIL Open Font License 1.1 |
 | Chromium a Node.js (súčasť Electronu) | zoznam licencií je v aplikácii |
 
