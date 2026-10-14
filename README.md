@@ -1,20 +1,26 @@
 # Lazy3D
 
-Jednoduchý 3D modelár pre 3D tlač a laser – po slovensky, bez predplatného, beží priamo v Macu bez internetu.
+Jednoduchý 3D modelár pre 3D tlač a laser – po slovensky, bez predplatného, beží priamo v počítači bez internetu.
+Pre **Mac** aj **Windows**.
 
 - 2D náčrt → 3D: vytiahnutie, rotácia, zaoblenie a skosenie hrán, škrupina, závity (skrutka aj matica)
 - šípky na ťahanie rozmerov priamo v 3D, vytiahnutie steny jedným ťahom
-- text v náčrte (aj písma z Macu), export STL / 3MF / STEP a náčrtu do DXF / SVG pre laser
+- text v náčrte (aj písma z počítača), export STL / 3MF / STEP a náčrtu do DXF / SVG pre laser
 - obrys podložky tlačiarne, svetlý aj tmavý režim
 
 ## Stiahnutie
 
-**[⬇ Stiahnuť Lazy3D (najnovšia verzia)](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D.dmg)**
+| | |
+|---|---|
+| **Mac** | **[⬇ Stiahnuť Lazy3D pre Mac](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D.dmg)** – Apple čip (M1 a novšie) aj Intel, macOS 13 Ventura a novší |
+| **Windows** | **[⬇ Stiahnuť Lazy3D pre Windows](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D-Setup.exe)** – Windows 10 a 11, 64-bit |
 
-Mac s Apple čipom (M1 a novšie) aj s Intelom, macOS 13 Ventura a novší.
-Zoznam verzií a zmien: [Releases](https://github.com/Dionissro/lazy3d-releases/releases)
+Odkazy vedú vždy na najnovšiu verziu. Zoznam verzií a zmien: [Releases](https://github.com/Dionissro/lazy3d-releases/releases).
+Nové verzie si Lazy3D nájde samo a ponúkne aktualizáciu.
 
-## Inštalácia – najjednoduchšie (bez upozornenia)
+## Mac
+
+### Najjednoduchšie – jedným príkazom (bez upozornenia)
 
 Otvor **Terminál** (⌘ medzerník → napíš Terminál), vlož tento riadok a stlač Enter:
 
@@ -26,7 +32,7 @@ Stiahne najnovšiu verziu, dá ju do priečinka Aplikácie a otvorí ju. macOS s
 lebo súbor nesťahuje prehliadač. Tým istým príkazom sa dá Lazy3D kedykoľvek preinštalovať.
 Čo príkaz robí, si môžeš pozrieť v súbore [install.sh](install.sh).
 
-## Inštalácia cez stiahnutý súbor
+### Cez stiahnutý súbor
 
 1. Stiahni [Lazy3D.dmg](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D.dmg),
    otvor ho a potiahni Lazy3D do priečinka **Aplikácie**.
@@ -34,7 +40,28 @@ lebo súbor nesťahuje prehliadač. Tým istým príkazom sa dá Lazy3D kedykoľ
    Klikni **Hotovo**, otvor **Nastavenia systému → Súkromie a bezpečnosť**, zroluj dole
    a pri Lazy3D klikni **Aj tak otvoriť**. (macOS 13–14: pravý klik na Lazy3D → Otvoriť.)
 
-Nové verzie si Lazy3D nájde samo a ponúkne aktualizáciu.
+## Windows
+
+### Cez stiahnutý súbor
+
+1. Stiahni [Lazy3D-Setup.exe](https://github.com/Dionissro/lazy3d-releases/releases/latest/download/Lazy3D-Setup.exe) a spusti ho.
+2. Ak sa objaví modré okno **„Systém Windows ochránil váš počítač“**, klikni **Ďalšie informácie → Spustiť aj tak**
+   (aplikácia zatiaľ nemá platený podpisový certifikát).
+3. Klikni **Inštalovať**. Heslo správcu netreba – Lazy3D sa nainštaluje len pre teba.
+
+Lazy3D potom nájdeš v ponuke **Štart** a na ploche, projekty `.lazy3d` sa otvárajú dvojklikom.
+Odinštalovanie: **Nastavenia → Aplikácie → Lazy3D → Odinštalovať** (tvoje projekty zostanú).
+
+### Jedným príkazom (bez upozornenia)
+
+Otvor **PowerShell** (Štart → napíš PowerShell), vlož tento riadok a stlač Enter:
+
+```powershell
+irm https://raw.githubusercontent.com/Dionissro/lazy3d-releases/main/install.ps1 | iex
+```
+
+Stiahne najnovšiu verziu, nainštaluje ju a otvorí. Upozornenie SmartScreen sa neukáže, lebo súbor nesťahuje
+prehliadač. Čo príkaz robí, si môžeš pozrieť v súbore [install.ps1](install.ps1).
 
 ## Licencie a zdrojový kód
 
