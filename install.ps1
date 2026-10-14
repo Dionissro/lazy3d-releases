@@ -12,8 +12,11 @@
     Write-Host 'Sťahujem Lazy3D (asi 120 MB)…'
     Invoke-WebRequest -Uri $url -OutFile $setup -UseBasicParsing
     Write-Host 'Inštalujem…'
-    # /S = bez okien, /RUN = po inštalácii otvoriť; bežiace Lazy3D inštalátor zavrie sám
-    $p = Start-Process -FilePath $setup -ArgumentList '/S', '/RUN' -Wait -PassThru
+    # /S = bez okien, /RUN = po inštalácii otvoriť; bežiace Lazy3D inštalátor zavrie sám.
+    # Nie Start-Process -Wait – to čaká aj na spustené Lazy3D, kým sa nezavrie.
+    $p = Start-Process -FilePath $setup -ArgumentList '/S', '/RUN' -PassThru
+    $null = $p.Handle # bez toho Windows PowerShell nevráti ExitCode
+    $p.WaitForExit()
     if ($p.ExitCode -ne 0) { throw "inštalátor skončil s kódom $($p.ExitCode)" }
     $exe = Join-Path $env:LOCALAPPDATA 'Programs\Lazy3D\Lazy3D.exe'
     $ver = (Get-Item $exe).VersionInfo.ProductVersion
